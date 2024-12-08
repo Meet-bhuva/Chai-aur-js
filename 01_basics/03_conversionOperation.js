@@ -6,7 +6,8 @@ let value = "33"
 let valueInNumber = Number(value)
 // console.log(typeof valueInNumber)
 
-//33 = 33 - 
+//pass the value in Number(!)
+//33 = 33 
 //"33abc" = NaN -not a number
 //trule = 1
 //false = 0
