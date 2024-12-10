@@ -75,7 +75,7 @@ const {courseName} = cours //This is Object destructuring // Course is a object,
 const {courseName: CN} = cours  //We can change the name, courseName = CN  
 // console.log(CN);
 
-/***************************************** Backend mathi value ave API through and json ma store thay **********************************/
+/*************************************** Value come from backend through API and it store in json **********************************/
 
 //There is a syntax of the jason, it is a type of a object and Array
 // {   "name": "meet",
