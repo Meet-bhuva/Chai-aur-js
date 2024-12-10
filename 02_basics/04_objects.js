@@ -53,9 +53,39 @@ const users = [
 
 // console.log(users[1].id) // get 2nd objects properties is Id
 
-console.log(tinderUser)
-console.log(Object.keys(tinderUser)) // get keys
-console.log(Object.values(tinderUser)) // get values
+// console.log(tinderUser)
+// console.log(Object.keys(tinderUser)) // get keys
+// console.log(Object.values(tinderUser)) // get values
 
-console.log(tinderUser.hasOwnProperty('isloggedIn')) //To check properties that is exist or not in object ? //Gives output as a boolean 
+// console.log(tinderUser.hasOwnProperty('isloggedIn')) //To check properties that is exist or not in object ? //Gives output as a boolean 
 
+
+/******************************************** de-structuring ****************************************************/
+
+const cours = {
+    courseName : "Chai aur code",
+    price : 999,
+    courseTeacher : "Hitesh chaudhry"
+}
+
+// cours.courseName
+
+const {courseName} = cours //This is Object destructuring // Course is a object, it transfer their properties 
+// console.log(courseName);
+const {courseName: CN} = cours  //We can change the name, courseName = CN  
+// console.log(CN);
+
+/***************************************** Backend mathi value ave API through and json ma store thay **********************************/
+
+//There is a syntax of the jason, it is a type of a object and Array
+// {   "name": "meet",
+//     "coursename": "chai aur code"
+//     "price":900
+// }
+
+// [
+//     {},
+//     {},
+//     {},
+//     {}
+// ]
