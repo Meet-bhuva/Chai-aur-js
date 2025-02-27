@@ -7,3 +7,6 @@ const user = {
         console.log(`${this.userName}, welcome to my repo`) //this keyword is used to bring current context, from 1 to 9 line is current context 
     }
 }
+user.welcomeMessage()
+user.userName = "bansuManiya"
+user.welcomeMessage()
