@@ -1,0 +1,9 @@
+const user = {
+    userName : "meetPatel",
+    userId : "@1213",
+    price : 999,
+
+    welcomeMessage : function(){
+        console.log(`${this.userName}, welcome to my repo`) //this keyword is used to bring current context, from 1 to 9 line is current context 
+    }
+}
