@@ -58,15 +58,13 @@ if (true){
 // 1. As a normal form
 // 2. As a variable form
 
-console.log(addOne(5)) // before initializing, it is runned 
-
+// console.log(addOne(5)) // before initializing, it is runned 
 function addOne(num){
     return num + 1
 }
 
 
-console.log(addTwo(5)) // before initializing, it is not runned 
-
+// console.log(addTwo(5)) // before initializing, it is not runned 
 const addTwo = function(num){
     return num + 2
 }
