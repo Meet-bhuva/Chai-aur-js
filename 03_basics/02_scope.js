@@ -43,9 +43,30 @@ if (true){
 
     if(userName === "BansuManiya"){
         const webSite = " On instagram.com"
-        console.log( userName + webSite);
+        // console.log( userName + webSite);
     }
 
     // console.log(webSite);
 }
 // console.log(userName)
+
+
+
+
+
+//*********************************** There is two type of declaring variables  *****************************************/
+// 1. As a normal form
+// 2. As a variable form
+
+console.log(addOne(5)) // before initializing, it is runned 
+
+function addOne(num){
+    return num + 1
+}
+
+
+console.log(addTwo(5)) // before initializing, it is not runned 
+
+const addTwo = function(num){
+    return num + 2
+}
