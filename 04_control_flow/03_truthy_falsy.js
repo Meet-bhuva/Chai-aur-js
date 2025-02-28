@@ -6,7 +6,7 @@ if(userEmail){
     console.log("can not find user email address")
 }
 
-//Falsy values : false, 0, -0, BigInt 0n, null, undefine, NaN
+//Falsy values : false, '', "",  0, -0, BigInt 0n, null, undefine, NaN
 //Truthy values : "0", 'false', " ", [], {}, function(){}
 
 const emptyArray = []

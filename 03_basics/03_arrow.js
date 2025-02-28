@@ -45,7 +45,7 @@ const user = {
 // const addTwo = (num1 , num2) => (num1 + num2);
 
 
-//if want to returen object from the arrow function, have to use ()
+//if want to return object from the arrow function, have to use ()
 // const addTwo = (num1, num2) => ({username : "Meetbhuva"})
 
 console.log(addTwo(2, 5))
