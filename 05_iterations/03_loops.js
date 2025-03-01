@@ -32,8 +32,8 @@ val.set('UK', "United Kingdome")
 
 // console.log(val)
 
-for (const [element, value] of val) {
-    // console.log(element, ':=', value)
+for (const [elements, value] of val) {
+    // console.log(elements, ':=', value) 
 }
 
 
