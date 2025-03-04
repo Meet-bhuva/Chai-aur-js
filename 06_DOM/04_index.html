@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code | DOM</title>
+</head>
+<body style="background-color: #212121; color : orange">
+    <ul class="language">
+        <li>Java-script</li>
+    </ul>
+</body>
+<script>
+    function addList(langName){
+        const li = document.createElement('li')
+        li.setAttribute('id','myId')
+        li.setAttribute('class','myClass')
+        const text = document.createTextNode(langName)
+        li.appendChild(text)
+        console.log(li)
+        document.querySelector('.language').appendChild(li)
+    }
+    addList('HTML & CSS')
+    addList('React-js')
+
+    //****** Edit
+    //1. jisko change karna hai use target kare 
+    //2. new element creat kare
+    //3. textcontent set kare 
+    //4. replaced with 1st step 
+    const target = document.querySelector('li:nth-child(2)')
+    const newLi = document.createElement('li')
+    newLi.textContent = 'Mongo-DB'
+    target.replaceWith(newLi)
+    
+    
+    //****** Remove
+    const lastName = document.querySelector('li:last-child')
+    lastName.remove()
+</script>
+</html>
