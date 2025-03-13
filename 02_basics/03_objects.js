@@ -31,5 +31,24 @@ myObj.funcTwo = function(){ //Add function in objects
   console.log(`Hey i m ${this.name}`) // want to get value (object properties) from the objects, so use this. keywords // Refer name in this syntax
 }
 
-console.log(myObj.funcOne())
-console.log(myObj.funcTwo())
+// console.log(myObj.funcOne())
+// console.log(myObj.funcTwo())
+
+const person = {
+  name : "Meet",
+  age : 25
+}
+// person['age'] = 28
+// console.log(person["name"]); // "Meet"
+// console.log(person["age"]); // 25
+
+let student = {
+  name: "Meet",
+  marks: {
+    math: 90,
+    science: 85
+  }
+};
+
+console.log(student["marks"]["math"]); // 90
+

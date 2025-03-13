@@ -77,7 +77,7 @@ const {courseName: CN} = cours  //We can change the name, courseName = CN
 
 /*************************************** Value come from backend through API and it store in json **********************************/
 
-//There is a syntax of the jason, it is a type of a object and Array
+//There is a syntax of the json, it is a type of a object and Array
 // {   "name": "meet",
 //     "coursename": "chai aur code"
 //     "price":900
@@ -89,3 +89,19 @@ const {courseName: CN} = cours  //We can change the name, courseName = CN
 //     {},
 //     {}
 // ]
+
+function Person(name, age) {
+    who = name;
+    howlong = age;
+    this.greet = function () {
+      return `Hello, my name is ${this.who}`;
+    };
+  }
+  
+  // Creating multiple objects using the constructor
+  let person1 = new Person("Meet", 25);
+  let person2 = new Person("Raj", 30);
+  
+  console.log(person1.greet()); // "Hello, my name is Meet"
+  console.log(person2.greet()); // "Hello, my name is Raj"
+  

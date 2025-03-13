@@ -30,4 +30,12 @@ let url = "https//meet.com/meet%50bhuva"
 // console.log(url.includes("meet"))//Check the value from the string  
 
 let newStringTwo = "Meet-Patel-96241-bhuva"
-console.log(newStringTwo.split("-")) //Split is convert to array form from the (-) like this [ 'Meet', 'Patel', '96241', 'bhuva' ]
+// console.log(newStringTwo.split("-")) //Split is convert to array form from the (-) like this [ 'Meet', 'Patel', '96241', 'bhuva' ]
+
+let str = "Meet, Mithabhai, Bhuva"
+// console.log(str.indexOf('is'))
+// console.log(str.lastIndexOf('is'))
+let str1 = str.split(", ")
+console.log(str1)
+let str2 = str1.join(",")
+console.log(str2)

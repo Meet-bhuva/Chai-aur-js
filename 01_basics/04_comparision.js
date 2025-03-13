@@ -9,3 +9,4 @@ console.log(null >= 0)
 
 // (===) check strickly it checked both value and data-type   
 // console.log("2" === 2) //output is false 
+

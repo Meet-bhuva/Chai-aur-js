@@ -24,14 +24,13 @@ let newArray = new Array(0, 1, 2, 3) //Second way to declare, use this bracket =
 
 // slice and splice
 let arr = [1,2,3,4,5]
+// console.log("A ", arr)
 
-console.log("A ", arr)
 console.log(arr.slice(1, 3))
-
-console.log("B ", arr) //Not changed main arr
+// console.log("B ", arr) //Not changed main arr
 
 console.log(arr.splice(1, 3))
-console.log("c ", arr)//Changed main arr
+// console.log("c ", arr)//Changed main arr
 
 //slice copy the value and it do not change the main array
 //When splice reference the value and it change the main array
