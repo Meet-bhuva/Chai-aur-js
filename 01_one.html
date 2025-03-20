@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Events</title>
+  </head>
+  <body style="background-color: rgba(227, 163, 15, 0.749)">
+    <h1>Amazing Images</h1>
+    <div class="containers">
+      <ul
+        class="photos"
+        style="display: flex; gap: 20px; list-style-type: none"
+      >
+        <li>
+          <img
+            width="200px"
+            id="india"
+            src="https://images.pexels.com/photos/235986/pexels-photo-235986.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="photos"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="parish"
+            src="https://images.pexels.com/photos/459335/pexels-photo-459335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="photos"
+          />
+        </li>
+        <li>
+          <img width="200px" id="dubai"
+          src="https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tiny
+          width="200px" id="mumbai"
+          src="https://images.pexels.com/photos/96627/pexels-photo-96627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="photos">
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="banglore"
+            src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="photos"
+          />
+        </li>
+        <li><a id="google" style="color: black; font-size: 20px;" href="https://google.com">Google</a></li>
+      </ul>
+    </div>
+  </body>
+
+  <script>
+      //Types of every events like keyboard events, mouse events etc
+      //Timestamps of every events, which is loketed in events list
+      //preventDefault
+      //target, toElements, srcElement, currentTarget
+      //clintX, clintY, screenX, screenY
+      //altKey, ctrlKey, shiftKey, keyCode
+
+    //****************************** Two type of event handling ******************************//
+    // document.getElementById("india").onclick = function(){
+    //     alert("India is a beautiful country");
+    // }
+
+
+    // const india = document.querySelector("#india");
+    // india.addEventListener(
+    //   "click",
+    //   function (e) {
+    //     // alert("India is a beautiful country");
+    //     // console.log(e);
+    //   },
+    //   false
+    // );
+    //here false is a third parameters, which is event propogation and it has two context
+    // 1. eventBublling, this is for false value, Down to Earth
+    // 2. eventCapturing, this is for true value Earth to Down
+
+
+    //********************************* Example of event bubbling and capturing *********************************//
+    //document.getElementsByClassName("containes") //here getElementsByClassName can not used because it is a collection of elements, when getelementbyid,querySelector is a single element
+    // document.querySelector(".containers").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("Click the first photos");
+    //   },
+    //   false
+    // );
+
+    // const first = document.querySelector("#india");
+    // first.addEventListener(
+    //   "click",
+    //   function (e) {
+    //     console.log("Click the first photos");
+    //     e.stopPropagation(); //here stopPropagation is used to stop the event bublling / it is not give properties of parentr elements
+    //   },
+    //   false
+    // );
+
+    //***********************************preventDefault()***********************************//
+    // document.querySelector("#google").addEventListener("click", function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("Google is a search engine");
+    // }, false);
+
+
+    //************************************Small Projects***************************************************//
+
+//  document.querySelector(".photos").addEventListener("click",function(e){
+//     e.preventDefault();
+//     // console.log(e)
+//     console.log(e.target.parentNode) //e.target give the element that is under the .photos, where i clicked but i want a remove Li because of if i remove picture so picture removed but space is not and here i can not find li because it is not visible that's why i used parentNode
+
+//     const removeIt = e.target.parentNode;
+//     removeIt.remove();
+//  })
+
+ document.querySelector(".photos").addEventListener("click",function(e){
+    e.preventDefault();
+    // console.log(e)
+    console.log(e.target.tagName)
+    if(e.target.tagName === "IMG"){
+        const removeIt = e.target.parentNode;
+        removeIt.remove();
+    }
+ })
+  </script>
+</html>
