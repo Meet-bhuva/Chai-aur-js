@@ -96,3 +96,22 @@ function getArrayValue(getvalue){   //2.Get value as a parameters
 // console.log(getArrayValue(myArray)) //1.Given Array's value as a argument
 // console.log(getArrayValue([100, 200, 300, 400, 500]))  //can pass direct Arrays
 
+// function sum(...numbers) {
+//     return numbers;
+//   }
+  
+//   console.log(sum(1, 2, 3, 4)); // Output: 10
+//   console.log(sum(10, 20, 30)); // Output: 60
+  
+
+  function greet(name) {
+    console.log("Hello, " + name + "!");
+    sayGoodbye(25); // Call the callback function
+  }
+  
+  function sayGoodbye(age) {
+    console.log("Goodbye!" + age);
+  }
+  
+  greet("Meet");
+  

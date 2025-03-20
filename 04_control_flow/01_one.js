@@ -9,11 +9,11 @@ let isUserloggedIn =1;
 // condition are <, >, <=, >=, ==, !=, ===
 
 
-// if(isUserloggedIn){
-//     let power = "fly"
-//     console.log(`My power is ${power}`)
-// }
-// console.log(`My power is ${power}`)
+if(isUserloggedIn){
+    let power = "fly"
+    console.log(`My power is ${power}`)
+}
+// console.log(`My power is ${power}`) //undefine of power 
 
 
 /********* SHORT-HAND NOTATION ****************************************/

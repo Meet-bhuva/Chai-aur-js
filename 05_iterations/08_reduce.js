@@ -2,10 +2,11 @@
 
 const myNumber = [10, 20, 30, 40, 50]
 
-// const myTotal = myNumber.reduce(function (acc, currval) { // acc start with 0, when currval start with 10
-//     console.log(`acc : ${acc}, currval : ${currval}`); 
-//     return acc + currval;
-// }, 0)//here 0 works for saying acc to start with 0
+const myTotal = myNumber.reduce(function (acc, currval) { // acc start with 0, when currval start with 10
+    console.log(`acc : ${acc}, currval : ${currval}`); 
+    return acc + currval;
+}, 4)//here 0 works for saying acc to start with 0
+console.log(myTotal);
 
 // const myTotal = myNumber.reduce( (acc, currval) => acc + currval, 4) 
 
@@ -25,6 +26,6 @@ const myCart = [
     },
 ]
 
-const myTotal = myCart.reduce( (acc, price) => acc + price.itemPrice, 0 )
-console.log(myTotal);
+// const myTotal = myCart.reduce( (acc, price) => acc + price.itemPrice, 0 )
+// console.log(myTotal);
 

@@ -22,8 +22,8 @@ function printMe(item){
 arr.forEach(printMe) //Only give refference of function, not give executive function like a printeMe()
 
 
-arr.forEach( (item, index, arr)=>{
-// console.log(item, index, arr)
+arr.forEach( (item, index, ar)=>{
+console.log(item, index, ar)
 })
 
 

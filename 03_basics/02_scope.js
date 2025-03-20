@@ -14,7 +14,7 @@ if (true) {    //block scope
     // var c = 30; // When var exit from if scope
     // console.log("INNER", a)
 }
-// console.log(a)
+console.log(a)
 // console.log(b)
 // console.log(c) // output is 30, so do not use var variable because it get value from if scope
 
