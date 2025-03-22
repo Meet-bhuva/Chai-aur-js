@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+  </body>
+  <script>
+    //setTimeout and setInterval is a method of Async
+    //Here setTimeout run after 2sec, It is run only one time
+    //     setTimeout(function(){
+    //   console.log("Hello i am listening hanuman chalisha in background");
+    //     }, 2000);
+
+    const sayHi = function () {
+      console.log("Hello i am listening hanuman chalisha in background");
+    };
+    //sayHi is a reference of function
+    //sayHi() is a execute
+    //  setTimeout(sayHi, 2000);//Here give refernce of function because setTimeout has a handler option
+
+    const newText = function () {
+      document.querySelector("h1").textContent =
+        "Hello i am listening hanuman chalisha in background";
+    };
+    const changeMe = setTimeout(newText, 2000);
+//If i want to stop the timeout then i have to use clearTimeout
+document.querySelector("#stop").addEventListener("click", function(){
+    clearTimeout(changeMe);//Here give reference of setTimeout and it will best work in event 
+    console.log("Timeout is stop");
+});
+
+    //Here setInterval run after 2sec, It is run multiple time and always run after 2sec
+    // setInterval(function () {
+    //   console.log("Hello i am listening hanuman chalisha in background");
+    // }, 2000);
+  </script>
+</html>
